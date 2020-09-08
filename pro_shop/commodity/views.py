@@ -1,5 +1,12 @@
+import json
+
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-def index(request):
-    return render(request,'home-02.html')
+from django.views import View
+
+
+class CommodityViews(View):
+    def post(self,request):
+        pass
